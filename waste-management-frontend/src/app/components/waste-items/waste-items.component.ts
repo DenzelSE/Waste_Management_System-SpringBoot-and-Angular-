@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { WasteService } from '../../services/waste.service';
 
 @Component({
   selector: 'app-waste-items',
-  imports: [],
-  templateUrl: './waste-items.component.html',
-  styleUrl: './waste-items.component.css'
+  templateUrl: './waste-items.component.html'
 })
-export class WasteItemsComponent {
+export class WasteItemsComponent implements OnInit {
+  wasteItems: any[] = [];
 
+  constructor(private wasteService: WasteService) {}
+
+  ngOnInit(): void {
+    this.wasteService.getAllWasteItems().subscribe(data => {
+      this.wasteItems = data;
+    });
+  }
 }
