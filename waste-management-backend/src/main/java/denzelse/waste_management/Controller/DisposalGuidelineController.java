@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import denzelse.waste_management.DTOs.DisposalGuidelineDTO;
+import denzelse.waste_management.Service.DisposalGuidelineServiceImp;
+
 
 /**
  * Controller for managing diposal guidelines in the Waste Management Spring Boot application.
