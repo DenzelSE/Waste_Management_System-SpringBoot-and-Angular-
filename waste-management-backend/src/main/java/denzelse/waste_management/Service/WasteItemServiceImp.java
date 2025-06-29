@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import denzelse.waste_management.DTOs.WasteItemDTO;
+import denzelse.waste_management.Exception.theNotFoundException;
 import denzelse.waste_management.Model.WasteItem;
 import denzelse.waste_management.Repository.WasteItemRepository;
 import denzelse.waste_management.Service.interfaces.WasteItemService;

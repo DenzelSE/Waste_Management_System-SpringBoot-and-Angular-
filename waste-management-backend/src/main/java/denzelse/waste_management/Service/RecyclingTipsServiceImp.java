@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import denzelse.waste_management.DTOs.RecyclingTipDTO;
+import denzelse.waste_management.Exception.theNotFoundException;
 import denzelse.waste_management.Model.RecyclingTip;
 import denzelse.waste_management.Repository.RecyclingTipsRepository;
 import denzelse.waste_management.Service.interfaces.RecyclingTipsService;
